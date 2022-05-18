@@ -1,6 +1,9 @@
-void moveZeroes(int* nums, int numsSize){
-           int i,j=0,temp;
-        for(i=1;i<numsSize;i++)
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        int i,j=0,temp;
+        int n = nums.size();
+        for(i=1;i<n;i++)
         {
             if(nums[i]!=0 && nums[j]==0)
             {
@@ -13,5 +16,6 @@ void moveZeroes(int* nums, int numsSize){
                 j++;
             }
         }
-
-}
+    
+    }
+};
